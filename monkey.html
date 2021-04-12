@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title> Monkey Walk </title>
+      <style>
+             body {
+   text-align: center;
+   background-color: #7B1FA2;
+         font-size: 30px;
+			 	font-family: 'Staatliches', cursive;
+      background-image: linear-gradient(to right top, #D50000,#C51162,#AA00FF,#304FFE,#00B8D4,#00C853,#AEEA00,#FFD600,#FF6D00);
+
+
+      </style>
+      <script>
+      var images =["https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_02.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_03.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_04.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_05.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_06.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_07.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_08.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_09.png","https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_10.png"];
+var v=0;
+function nextslide()
+{
+document.getElementById("album").src=images[v];
+v=v+1;
+if (v == 9)
+{
+  v=0;
+}}
+
+      </script>
+  </head>
+  
+  <body>
+      <h1> Monkey Walk </h1>
+    <img id="album" src="https://projectsassets.s3.us-east-2.amazonaws.com/Monkey_01.png">
+    <div>
+      <button type="button" onclick="nextslide()"> Move </button>
+  </body>
+</html>
